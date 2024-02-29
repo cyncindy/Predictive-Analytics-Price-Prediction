@@ -2,7 +2,7 @@
 
 ## Domain Proyek
 
-Keputusan pembelian rumah sangat dipengaruhi oleh harga rumah itu sendiri. Namun, hal tersebut bukan merupakan satu-satunya faktor yang menjadi pertimbangan pembelinya. Keputusan pembelian rumah juga dipengaruhi oleh banyak faktor, termasuk lokasi, kualitas perumahan, kemudahan umum, ciri-ciri struktur rumah, jarak dan lokasi proyek, kemudahan transportasi, keamanan, dan fasilitas yang tersedia [[1](https://journalarticle.ukm.my/14215/1/36213-114170-1-PB.pdf)]
+Keputusan pembelian rumah sangat dipengaruhi oleh harga rumah itu sendiri. Namun, hal tersebut bukan merupakan satu-satunya faktor yang menjadi pertimbangan pembelinya. Keputusan pembelian rumah juga dipengaruhi oleh banyak faktor, termasuk lokasi, kualitas perumahan, kemudahan umum, ciri-ciri struktur rumah, jarak dan lokasi proyek, kemudahan transportasi, keamanan, dan fasilitas yang tersedia [[1](https://journalarticle.ukm.my/14215/1/36213-114170-1-PB.pdf)].
 
 Dalam rangka prediksi harga rumah, telah dirancang sistem yang dapat digunakan untuk melakukan prediksi harga rumah dengan mempertimbangkan berbagai faktor-faktor penentunya. Saat ini, model pengembangan prediksi harga rumah yang paling banyak digunakan adalah model regresi dan model tersebut dapat secara akurat memprediksi harga rumah dengan memasukkan elemen-elemen penentu dari rumah yang dituju [[2](https://ieeexplore.ieee.org/document/9952397)].
 
@@ -62,30 +62,30 @@ Berikut adalah hasil dari Exploratory Data Analysis (EDA) yang telah dilakukan.
 
 - Fitur Apartment type
 
-![Image 1](https://yourlinkhere.png?raw=true)
+![Image 1](https://github.com/cyncindy/Predictive-Analytics-Price-Prediction/blob/main/images/CatFeatures1.png?raw=true)
 
 Berdasarkan gambar tersebut, diketahui bahwa distribusi data kategori 'Apartment type' memiliki perbandingan jumlah yang berbeda, untuk nlai data 'New building' memiliki jumlah sampel sebesar 8.169 dengan persentase 55.7% dan 'Secondary' memiliki jumlah sampel sebesar 6.493 dengan persentase 44.3%.
 
 - Fitur Region
 
-![Image 2](https://yourlinkhere.png?raw=true)
+![Image 2](https://github.com/cyncindy/Predictive-Analytics-Price-Prediction/blob/main/images/CatFeatures2.png?raw=true)
 
 Data kategori 'Region' juga memiliki nilai yang lebih jauh berbeda antara keduanya yaitu 9.125 sampel untuk 'Moscow' dengan jumlah persentase 62.2%, sedangkan untuk 'Moscow region' memiliki sampel sebesar 5.537 sampel yaitu sebesar 37.8%.
 
 - Fitur Renovation
 
-![Image 3](https://yourlinkhere.png?raw=true)
+![Image 3](https://github.com/cyncindy/Predictive-Analytics-Price-Prediction/blob/main/images/CatFeatures3.png?raw=true)
 
 Terakhir, untuk data kategori 'Renovation' juga memiliki persebaran data yang tidak merata yaitu sebesar 10.577 sampel untuk 'Cosmetic' dengan persentase 72.1%, sedangkan untuk 'European-style renovation' mencapai jumlah 2.222 sampel dan persentase sebesar 15.2%, untuk 'Without renovation' sebesar 1.106 sampel dengan jumlah persentase 7.5%, serta 'Designer' sebanyak 757 sampel dengan persentase 5.2%.
 
 ### Numerical Features
 
-![Image 4](https://yourlinkhere.png?raw=true)
+![Image 4](https://github.com/cyncindy/Predictive-Analytics-Price-Prediction/blob/main/images/NumFeatures1.png?raw=true)
 
 Pada gambar diatas, dapat dilihat bahwa data numerik memiliki karakteristik sebagai berikut:
 
 - Rentang data harga rumah paling banyak berada pada angka 1.600 sampai 1.700 yaitu rumah yang berada pada harga 9.000.000 hingga 10.000.000
-- Persebaran data yang beragam untuk kategori 'Minutes to metro' dimana data yang tersedia adalah rumah dengan rentang jarak 13 menit dari rumah ke metro yaitu sekitar 1.750 data.
+- Persebaran data yang beragam untuk kategori 'Minutes to metro' dimana data terbanyak yang tersedia adalah rumah dengan rentang jarak 13 menit dari rumah ke metro yaitu sekitar 1.750 data.
 - Ruangan terbanyak pada data ini yaitu adalah rumah yang memiliki sebanyak 2 ruangan, dan rumah yang memiliki ruangan paling sedikit adalah rumah dengan 5 ruangan.
 - Luas area yang berada pada rentang 40 meter persegi hingga 45 meter persegi yang memiliki jumlah data terbanyak yaitu mencapai lebih dari 1.200 data dan semakin luas area nya maka semakin sedikit data yang dimiliki.
 - Luas living area terbanyak yang memiliki hingga lebih dari 800 data berada pada angka 22 meter persegi hingga 25 mter persegi, dan semakin luas living area nya maka semakin sedikit data yang dimiliki. 
@@ -99,31 +99,31 @@ Pada gambar diatas, dapat dilihat bahwa data numerik memiliki karakteristik seba
 
 - Rata-rata 'Price' relatif terhadap 'Apartment type'
 
-![Image 5](https://yourlinkhere.png?raw=true)
+![Image 5](https://github.com/cyncindy/Predictive-Analytics-Price-Prediction/blob/main/images/CatFeaturesMulti1.png?raw=true)
 
 Pada fitur 'Apartment type', rata-rata harga berbanding jauh. Apartment type 'Secondary' memiliki harga yang relatif lebih tinggi jika dibandingkan dengan 'New building'. Sehingga, fitur 'Apartment type' memiliki pengaruh yang cukup besar terhadap harga.
 
 - Rata-rata 'Price' relatif terhadap 'Region'
 
-![Image 6](https://yourlinkhere.png?raw=true)
+![Image 6](https://github.com/cyncindy/Predictive-Analytics-Price-Prediction/blob/main/images/CatFeaturesMulti2.png?raw=true)
 
 Untuk fitur 'Region', rata-rata harga juga berbanding jauh. Region 'Moscow region' memiliki harga yang lebih rendah jika dibandingkan dengan region 'Moscow'. Oleh karena itu, fitur 'Region' memiliki pengaruh yang tinggi terhadap harga.
 
 - Rata-rata 'Price' relatif terhadap 'Renovation'
 
-![Image 7](https://yourlinkhere.png?raw=true)
+![Image 7](https://github.com/cyncindy/Predictive-Analytics-Price-Prediction/blob/main/images/CatFeaturesMulti3.png?raw=true)
 
 Dapat dilihat pada fitur 'Renovation', rata-rata harga 'Designer' memiliki nilai tertinggi dan disusul oleh 'Without renovation', dan ketiga 'European-style renovation' dan terakhir 'Cosmetic'. Perbedaan harga diantara beberapa kategori ini yang menyebabkan banyaknya variasi harga berbeda pada fitur 'Renovation' sehingga fitur 'Renovation' memiliki pengaruh yang tinggi terhadap harga.
 
 ### Numerical Features
 
-![Image 8](https://yourlinkhere.png?raw=true)
+![Image 8](https://github.com/cyncindy/Predictive-Analytics-Price-Prediction/blob/main/images/NumFeaturesPairPlot().png?raw=true)
 
 Dengan menggunakan fungsi pairplot() dari library seaborn, dapat diketahui relasi pasangan dalam dataset. Berdasarkan gambar, terlihat plot relasi masing-masing fitur numerik pada dataset. Pada pola sebaran data grafik pairplot, fitur 'Area' dan 'Living area' memiliki korelasi dengan fitur 'Price' sedangkan fitur-fitur lainnya terlihat memiliki korelasi yang lemah karena sebarannya tidak membentuk pola.
 
 ### Correlation Matrix
 
-![Image 9](https://yourlinkhere.png?raw=true)
+![Image 9](https://github.com/cyncindy/Predictive-Analytics-Price-Prediction/blob/main/images/CorrelationMatrix.png?raw=true)
 
 Correlation Matrix tersebut menunjukkan hubungan antar fitur dalam nilai korelasi. Berdasarkan pengamatan, fitur 'Area', 'Living area', dan 'Number of rooms' merupakan peringkat ketiga terbesar yang memiliki nilai korelasi yang cukup tinggi, yaitu 'Area' sebesar 0.64, 'Living area' sebesar 0.58, dan 'Number of rooms' sebesar 0.41 terhadap fitur target 'Price'. Sementara itu, fitur lainnya memiliki korelasi yang kurang tinggi dan juga negatif sehingga fitur-fitur tersebut dapat dihilangkan atau dieliminasi.
 
@@ -147,13 +147,13 @@ Setelah memperoleh data yang sudah bersih, dilakukan encoding pada data kategori
 
 Kemudian dilakukan juga teknik reduksi atau pengurangan dimensi menggunakan teknik yang paling populer yaitu Principal Component Analysis atau PCA. Teknik ini berguna untuk mereduksi dimensi, mengekstraksi fitur, dan mentransformasi data dari "n-dimensional space" ke dalam sistem berkoordinat baru dengan dimensi m, dimana m lebih kecil dari n. Sebelum dilakukan reduksi dimensi, terlebih dahulu dilakukan visualisasi data untuk melihat hubungan antar fitur-fitur yang ada. Berikut dapat dilihat pada gambar dibawah ini.
 
-![Image 11](https://yourlinkhere.png?raw=true)
+![Image 11](https://github.com/cyncindy/Predictive-Analytics-Price-Prediction/blob/main/images/PCA1.png?raw=true)
 
 Dari hasil visualisasi terhadap gambar diatas, dapat diketahui bahwa dari antara tiga fitur yang diamati, hanya 'Area' dan 'Living area' yang memiliki hubungan antar fitur. Maka, kedua fitur tersebut dapat dilakukan reduksi dimensi dengan metode PCA.
 
 Berikut adalah visualisasi kedua fitur 'Area' dan 'Living Area'
 
-![Image 12](https://yourlinkhere.png?raw=true)
+![Image 12](https://github.com/cyncindy/Predictive-Analytics-Price-Prediction/blob/main/images/PCA2.png?raw=true)
 
 Setelah dilakukan reduksi dimensi dan diperoleh proporsi informasi dari ketiga komponen PCs tersebut, diketahui bahwa hasil yang diperoleh berupa array([0.956, 0.044]). Berdasarkan hasil yang diperoleh, sebesar 95.6% informasi pada kedua fitur 'Area' dan 'Living area' terdapat pada PC pertama. Sedangkan sisanya, sebesar 4.4% terdapat pada PC kedua sehingga fitur tersebut akan direduksi dan hanya PC (komponen) pertama saja yang dipertahankan. PC pertama tersebut akan menjadi fitur areas menggantikan kedua fitur 'Area' dan 'Living area'. Fitur tersebut akan dinamakan 'Areas'.
 
@@ -241,7 +241,7 @@ Berdasarkan hasil evaluasi dapat dilihat bahwa model dengan algoritma Random For
 
 Perbandingan tersebut juga dapat dilihat pada gambar dibawah ini
 
-![Image 14](https://yourlinkhere.png?raw=true)
+![Image 14](https://github.com/cyncindy/Predictive-Analytics-Price-Prediction/blob/main/images/Evaluation.png?raw=true)
 
 Dalam rangka menguji performa model yang dibuat, maka dilakukan prediksi menggunakan beberapa harga dari data test yang hasilnya dapat dilihat sebagai berikut:
 
